@@ -1,11 +1,11 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
+/*const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅: ${actual} === ${expected}`);
   } else {
     console.log(`❌: actual !== expected`);
   }
-};
+};*/
 
 const eqArrays = (arr1, arr2) => {
   
@@ -31,6 +31,6 @@ const assertArraysEqual = (array1, array2) => {
   }
 };
   
-assertArraysEqual([1, 2, 3], [1, 2, 2]);
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
+//assertArraysEqual([1, 2, 3], [1, 2, 2]);
+//assertArraysEqual([1, 2, 3], [1, 2, 3]);
 
