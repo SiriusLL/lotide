@@ -29,10 +29,10 @@ const letterPositions = function(sentence) {
     if (sentence[index] === ' '){
       continue;
     }
-    if (results[sentence[index]]) {
-      results[sentence[index]].push(index);
+    if (results[sentence[index]]) { //checks if key value exists
+      results[sentence[index]].push(index);  //pushes index to array in object results[sentence[index]]
     } else {
-      results[sentence[index]] = [index];
+      results[sentence[index]] = [index]; //if doesn't exist creats a key results[sentence[index]] = to value of [index] 
     }
   }
   return results;
