@@ -28,3 +28,6 @@ const countLetters = function(words) {
 
 
 console.log(countLetters('Hello a'));
+
+
+//look up regular expressions in mdn  regexp
