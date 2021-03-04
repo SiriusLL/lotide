@@ -41,9 +41,11 @@ const middle = (array) => {
   
 };
 
-console.log(middle([0, 1, 2, 3]));
-console.log(middle([0, 1, 2, 3, 4, 5]));
+console.log(assertArraysEqual(middle([0, 1, 2, 3]), [1, 2]));
+console.log(assertArraysEqual(middle([0, 1, 2, 3, 4, 5]), [2, 3]));
 console.log(middle([0, 1, 2, 3, 4, 5, 6, 7]));
 console.log(middle([0, 1, 2]));
 console.log(middle([0, 1, 2, 3, 4]));
 console.log(middle([0, 1, 2, 3, 4, 5, 6]));
+
+console.log(assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]))
