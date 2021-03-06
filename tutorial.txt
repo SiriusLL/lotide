@@ -1,0 +1,13 @@
+y copies a line of text to the buffer
+p pastes it to the cursor's current position
+dd will delete the whole line of text. This will also effectively "cut" a line of text as well. When you delete a line, it's placed in the buffer
+yy copies a whole line of text
+
+i insert text before cursor position
+a begin inserting after the current cursor position
+
+esc to enter command mode
+
+:w to save
+:wq write save and quite
+:q! quite and dont save

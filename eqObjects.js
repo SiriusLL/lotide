@@ -55,16 +55,6 @@ const eqObjects = function(object1, object2) {        //function that takes in t
 
   return true;
   
-    // for (const index of firstObb) {                   //loops through first array we created 
-    //   //if (firstObb[index] !== secObb[index]) {        //if the value of the first object.arrayValue does not equal the second than returns false 
-    //   if (eqArrays(firstObb, ))  
-    //     return false;
-    //   } else {
-    //     return true;                                  //otherwise returns true.
-    //   }
-    
-  
-
 };
 
 
