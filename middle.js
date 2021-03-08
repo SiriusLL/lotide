@@ -1,28 +1,28 @@
-// TEST/ASSERTION FUNCTIONS
-const eqArrays = (arr1, arr2) => {
+// // TEST/ASSERTION FUNCTIONS
+// const eqArrays = (arr1, arr2) => {
   
   
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (i = 0; i < arr1.length; i++) {
-    if(arr1[i] !== arr2[i]) {
-      return false;
-    }
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
+//   for (i = 0; i < arr1.length; i++) {
+//     if(arr1[i] !== arr2[i]) {
+//       return false;
+//     }
     
   
-  } return true;
-};
+//   } return true;
+// };
 
 
-const assertArraysEqual = (array1, array2) => {
-  if(eqArrays(array1, array2)) {
-    console.log(`✅: PASS`);
-  } else {
-    console.log(`❌: FAIL`);
-  }
-};
-
+// const assertArraysEqual = (array1, array2) => {
+//   if(eqArrays(array1, array2)) {
+//     console.log(`✅: PASS`);
+//   } else {
+//     console.log(`❌: FAIL`);
+//   }
+// };
+const assertArraysEqual = require('./assertArraysEqual.js')
 
 const middle = (array) => {
   const len = array.length;
@@ -41,11 +41,13 @@ const middle = (array) => {
   
 };
 
-console.log(assertArraysEqual(middle([0, 1, 2, 3]), [1, 2]));
-console.log(assertArraysEqual(middle([0, 1, 2, 3, 4, 5]), [2, 3]));
-console.log(middle([0, 1, 2, 3, 4, 5, 6, 7]));
-console.log(middle([0, 1, 2]));
-console.log(middle([0, 1, 2, 3, 4]));
-console.log(middle([0, 1, 2, 3, 4, 5, 6]));
+module.exports = middle;
 
-console.log(assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]))
+// console.log(assertArraysEqual(middle([0, 1, 2, 3]), [1, 2]));
+// console.log(assertArraysEqual(middle([0, 1, 2, 3, 4, 5]), [2, 3]));
+// console.log(middle([0, 1, 2, 3, 4, 5, 6, 7]));
+// console.log(middle([0, 1, 2]));
+// console.log(middle([0, 1, 2, 3, 4]));
+// console.log(middle([0, 1, 2, 3, 4, 5, 6]));
+
+// console.log(assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]))
