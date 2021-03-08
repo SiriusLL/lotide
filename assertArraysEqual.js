@@ -7,21 +7,22 @@
   }
 };*/
 
-const eqArrays = (arr1, arr2) => {
+// const eqArrays = (arr1, arr2) => {
   
   
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (i = 0; i < arr1.length; i++) {
-    if(arr1[i] !== arr2[i]) {
-      return false;
-    }
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
+//   for (i = 0; i < arr1.length; i++) {
+//     if(arr1[i] !== arr2[i]) {
+//       return false;
+//     }
     
   
-  } return true;
-};
+//   } return true;
+// };
 
+const eqArrays = require('./eqArrays.js');
 
 const assertArraysEqual = (array1, array2) => {
   if(eqArrays(array1, array2)) {
@@ -31,6 +32,7 @@ const assertArraysEqual = (array1, array2) => {
   }
 };
   
+module.exports = assertArraysEqual;
 //assertArraysEqual([1, 2, 3], [1, 2, 2]);
 //assertArraysEqual([1, 2, 3], [1, 2, 3]);
 
