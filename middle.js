@@ -31,7 +31,7 @@ const middle = (array) => {
   const odd = (Math.floor(len / 2));
   //console.log(even1);
   //console.log(even2);   // check if middle math is correct 
-  if (array.length === 1 || len === 2) {
+  if (len === 1 || len === 2) {
     return [];
   } else if (len % 2 === 0) {
     return [array[even1], array[even2]];
@@ -40,7 +40,8 @@ const middle = (array) => {
   }
   
 };
-
+console.log(middle([1, 2, 3, 4, 5]));
+console.log(middle([1]));
 module.exports = middle;
 
 // console.log(assertArraysEqual(middle([0, 1, 2, 3]), [1, 2]));
