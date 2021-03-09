@@ -31,3 +31,4 @@ console.log(countLetters('Hello a'));
 
 
 //look up regular expressions in mdn  regexp
+module.exports = countLetters;

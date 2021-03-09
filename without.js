@@ -39,6 +39,7 @@ const without = (arry1, arry2) => {
   return newArr;
 }
 
+module.exports = without
 /*without([1, 2, 3], [1]) // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
 //assertArraysEqual(without([1,2,3], [1]), [2,3])

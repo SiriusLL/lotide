@@ -27,6 +27,8 @@ const countOnly = function(allItems, itemsToCount) {
   }
   return result;
 }
+
+module.exports = countOnly;
  
 
 

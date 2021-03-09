@@ -36,7 +36,7 @@ const bestTVShowsByGenre = {
   drama:  "The Wire"
 };
 
-findKeyByValue = function(bestShows, shows) {
+const findKeyByValue = function(bestShows, shows) {
   //const newArr = Object.keys(bestShows);
   let result = '';
   for (let genreIndex in bestShows) {
@@ -52,6 +52,10 @@ findKeyByValue = function(bestShows, shows) {
 
 };
 
+
+module.exports = findKeyByValue;
+
+
 //console.log(result);
 
 
@@ -61,3 +65,4 @@ findKeyByValue = function(bestShows, shows) {
 //assertArraysEqual(findKeysByValue(bestTVShowsByGenre, "The Wire"), "The Wire");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+

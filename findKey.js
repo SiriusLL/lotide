@@ -38,6 +38,7 @@ const findKey = (object, condition) => {
   }
 }
 
+module.exports = findKey;
 
 findKey({
   "Blue Hill": { stars: 1 },

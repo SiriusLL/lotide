@@ -41,6 +41,7 @@ const map = function(array, callback) {
 }
 
 
+module.exports = map;
 
 const words = ["ground", "control", "to", "major", "tom"];
 // console.log(words)
