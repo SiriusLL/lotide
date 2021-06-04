@@ -1,7 +1,6 @@
 // // TEST/ASSERTION FUNCTIONS
 // const eqArrays = (arr1, arr2) => {
-  
-  
+
 //   if (arr1.length !== arr2.length) {
 //     return false;
 //   }
@@ -9,11 +8,9 @@
 //     if(arr1[i] !== arr2[i]) {
 //       return false;
 //     }
-    
-  
+
 //   } return true;
 // };
-
 
 // const assertArraysEqual = (array1, array2) => {
 //   if(eqArrays(array1, array2)) {
@@ -22,15 +19,15 @@
 //     console.log(`❌: FAIL`);
 //   }
 // };
-const assertArraysEqual = require('./assertArraysEqual.js')
+const assertArraysEqual = require('./assertArraysEqual.js');
 
 const middle = (array) => {
   const len = array.length;
-  const even1 = (len / 2) - 1;  //even1 is first middle
-  const even2 = (len / 2);  //even2 is second middle
-  const odd = (Math.floor(len / 2));
+  const even1 = len / 2 - 1; //even1 is first middle
+  const even2 = len / 2; //even2 is second middle
+  const odd = Math.floor(len / 2);
   //console.log(even1);
-  //console.log(even2);   // check if middle math is correct 
+  //console.log(even2);   // check if middle math is correct
   if (len === 1 || len === 2) {
     return [];
   } else if (len % 2 === 0) {
@@ -38,7 +35,6 @@ const middle = (array) => {
   } else {
     return [Math.floor(odd)];
   }
-  
 };
 console.log(middle([1, 2, 3, 4, 5]));
 console.log(middle([1]));

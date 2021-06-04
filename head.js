@@ -7,8 +7,7 @@
 //   }
 // };
 
-const assertEqual = require('./assertEqual')
-
+const assertEqual = require('./assertEqual');
 
 const head = (array) => {
   if (array.lenght === 0) {

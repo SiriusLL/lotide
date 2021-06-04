@@ -1,5 +1,5 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(`✅: ${actual} === ${expected}`);
   } else {
@@ -7,11 +7,8 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-
-
-
-const countLetters = function(words) {
-  words = words.replace(/\s+/g, '')
+const countLetters = function (words) {
+  words = words.replace(/\s+/g, '');
   let result = {};
 
   for (let letter of words) {
@@ -23,12 +20,9 @@ const countLetters = function(words) {
     }
   }
   return result;
-}
-
-
+};
 
 console.log(countLetters('Hello a'));
-
 
 //look up regular expressions in mdn  regexp
 module.exports = countLetters;
